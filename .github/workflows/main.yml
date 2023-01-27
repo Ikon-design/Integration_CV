@@ -12,6 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: files.000webhost.com
-        username: borislebg
-        password: Re65kJQmk4YhWtb
+        username: ${{ secrets.IDENTIFIANT }}
+        password: ${{ secrets.PASSWORD }}
         server-dir : public_html/
